@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random YouTube Video Player</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <div class="container">
+      <h1>Random YouTube Video Player</h1>
+      <div id="player"></div>
+      <form id="search-form">
+        <label for="search-input">Search for videos:</label>
+        <input type="text" id="search-input" name="search-input" />
+        <button type="submit">Search</button>
+      </form>
+      <p id="no-results" style="display: none;">No results found.</p>
+      <div id="search-results"></div>
+    </div>
+
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
